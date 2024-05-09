@@ -1,0 +1,612 @@
+body{
+    height: 0vh;
+    /*background-image: url(./images/sunset.jpg);*/
+    background-color: rgb(239, 177, 20);
+}
+
+.frontpg {
+  /*width: 100vw; /* Set width to 100% of the viewport width */
+  height: 100vh; /* Set height to 100% of the viewport height */
+  overflow: hidden; /* Hide any content that overflows the section */
+ /* margin: 0; /* Remove any default margin */
+  /*padding: 0; /* Remove any default padding */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+ /* display: flex; /* Use flexbox layout */
+  /*flex-direction: column; /* Arrange child elements vertically */
+ /* justify-content: center; /* Center child elements vertically */
+ /* align-items: center; Center child elements horizontally */
+}
+
+.list{
+    text-align: center;
+    justify-content: flex-start;
+    position: relative;
+    margin-top: -460px;
+    padding-bottom: 15px;
+  
+}
+.list ul{
+    list-style-type: circle;
+    display: inline;
+    color: white;
+  
+}
+.list li{
+    display: inline;
+    padding-inline: 50px;
+    font-size: 35px;
+    color: aliceblue;
+    
+}
+.list ul li a:hover{
+color: black;
+border: 2px solid #cb5806;
+padding: 7px;
+background-color: #cb5806;
+border-radius: 5px;
+
+}
+a{
+    text-decoration: none;
+}
+.list ul li a{
+    color: whitesmoke;
+}
+
+
+
+/* sliderframe*/
+.slider-frame{
+    overflow: hidden;
+    height: 800px;
+    width: 1800px;
+    margin-right: 360px;
+    margin-bottom: -200px;
+}
+
+/*slide animation*/
+@-webkit-keyframes slide_animation{
+    0% {left:0px}
+    10% {left: 0px;}
+    20% {left: 1200px;}
+    30% {left: 1200px;}
+    40% {left: 2400px;}
+    50% {left: 2400px;}
+    60% {left: 1200px;}
+    70% {left: 1200px;}
+    80% {left: 0px;}
+    90% {left: 0px;}
+    100% {left: 0px;}
+}
+
+.slide-images{
+    width: 3600px;
+    height: 800px;
+    margin: 0 0 0 -2400px;
+    position: relative;
+    -webkit-animation-name: slide_animation;
+    -webkit-animation-duration: 100s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-play-state: running;
+}
+
+.img-container{
+    height: 300px;
+    width: 1200px;
+    position: relative;
+    float: left;
+    
+}
+
+
+img{
+    height: 200%;
+    width: 100%;
+    object-fit: cover;
+    opacity: 0.9;
+}
+
+/* end of animation*/
+
+.introduction{
+  position: relative;
+  float: left;
+  margin-bottom: -200px;
+  top: 150px;
+  z-index: 1;
+  margin-left: 120px;
+}
+
+/*.introduction h2 li{
+
+  position: absolute;
+  line-height: 5px;
+  word-spacing: 2px;
+}
+.introduction ol li{
+  list-style-type: none;
+  padding: 15px;
+}*/
+
+.icons{
+  margin-bottom: -400px; /* Adjust spacing between icons */
+  float: right;
+  z-index: 1;
+  position: relative;
+  list-style-type: none;
+}
+.social-icon {
+  font-size: 24px; /* Adjust icon size */
+  color: #000; /* Adjust icon color */
+  text-decoration: none; /* Remove underline */
+  
+}
+.icons ul li {
+  padding: 20px;
+list-style-type: none;
+}
+
+
+/*------farming--------*/
+div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+/*body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}*/
+
+/* Style inputs */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #cb5806;
+  color: white;
+  border-radius: 5px;
+  font-size: larger;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+  color: black;
+}
+
+/* Style the container/contact section */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+.column img{
+  opacity: 0.6;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/*----------footnote---*/
+
+.foot-container{
+  background-image: url(./images/world-map.png);
+  background-color: #121111;
+  padding: 10px;
+color: white;
+}
+
+.foot-container1 {
+  background-color: #000;
+  color: white;
+  margin: 0;
+}
+
+.house3{
+  position: relative;
+  float: right;
+  padding-right: 30px;
+  
+}
+
+ .house2{
+  position: relative;
+}
+
+.ediokef{
+  margin-left: 37%;
+  
+}
+
+.house1{
+  position: relative;
+  
+
+}
+.foot-list{
+  margin-top: -220px;
+     padding-left: 30px; 
+}
+.foot-list p a{
+  color: white;
+}
+
+
+.social ul li{
+  display: inline;
+  list-style: none;
+  padding: 10px;
+  border: solid black 2px;
+  border-radius: 50%;
+  background-color: white;
+  
+}
+.social{
+  margin-top: 7%;
+text-align: center;
+word-spacing: 150px;
+} 
+
+.copyright-container{
+  background-color: #000;
+  color: white;
+  margin-top: 5px;
+  margin-right: -10px;
+  margin-left: -10px;
+  margin-bottom: -10px;
+  padding: 10px;
+}
+.copyright{
+  text-align: center;
+}
+
+
+
+/*.foot-nav{
+  float: left;
+  margin: 10px;
+}
+.foot-nav p a{
+  color: white;
+  font-size: larger;
+  display: block;
+}
+
+span{
+  padding-top: 5px;
+}
+.follow-us p{
+  text-align: center;
+  margin: 10px;
+  color: white;
+  display: block;
+}*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+@media only screen and (max-width: 700px) {
+  .list {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+
+  .list{
+    text-align: center;
+    justify-content: flex-start;
+    position: relative;
+    margin-top: -460px;
+    padding-bottom: 15px;
+  
+}
+.list ul{
+    list-style-type: circle;
+    display: inline;
+    color: white;
+  
+}
+.list li{
+    display: inline;
+    padding-inline: 50px;
+    font-size: 35px;
+    color: aliceblue;
+    
+}
+.list ul li a:hover{
+color: black;
+border: 2px solid #cb5806;
+padding: 7px;
+background-color: #cb5806;
+border-radius: 5px;
+
+}
+a{
+    text-decoration: none;
+}
+.list ul li a{
+    color: whitesmoke;
+}
+}
+
+@media only screen and (max-width: 500px) {
+.introd{
+  float: left;
+  font-size: 5%;
+  margin-left: -110px;
+  margin-top: -130px;
+}
+.introd h2{
+  font-size: -20px;
+}
+
+
+  .list {
+    width: 100%;
+  }
+  .list ul li{
+    padding: 0 11px;
+    display: inline;
+  font-size: 91%;
+  margin-left: -15px;
+  width: 24.99999%;
+  } 
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.comic-neue-light {
+    font-family: "Comic Neue", cursive;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .comic-neue-regular {
+    font-family: "Comic Neue", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .comic-neue-bold {
+    font-family: "Comic Neue", cursive;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .comic-neue-light-italic {
+    font-family: "Comic Neue", cursive;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .comic-neue-regular-italic {
+    font-family: "Comic Neue", cursive;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .comic-neue-bold-italic {
+    font-family: "Comic Neue", cursive;
+    font-weight: 700px;
+    font-style: normal;}
